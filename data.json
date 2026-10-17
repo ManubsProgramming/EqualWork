@@ -1,0 +1,203 @@
+{
+  "users": [],
+  "communities": [
+    {
+      "id": "c1",
+      "name": "PyLadies Manaus",
+      "city": "Manaus",
+      "area": "Desenvolvimento Web",
+      "type": "Grupo de estudo",
+      "members": 120,
+      "description": "Troca de experiências e aprendizagem de programação.",
+      "tags": [
+        "Python",
+        "Programação"
+      ],
+      "image": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": "c2",
+      "name": "Manaus Digitais",
+      "city": "Manaus",
+      "area": "Inclusão digital",
+      "type": "Projeto social",
+      "members": 85,
+      "description": "Compartilhamento de conhecimentos digitais e oportunidades.",
+      "tags": [
+        "Inclusão",
+        "Carreira"
+      ],
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": "c3",
+      "name": "Girls in Tech Manaus",
+      "city": "Manaus",
+      "area": "Tecnologia e liderança",
+      "type": "Comunidade online",
+      "members": 60,
+      "description": "Rede de troca para conectar e desenvolver mulheres na tecnologia.",
+      "tags": [
+        "Networking",
+        "Liderança"
+      ],
+      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": "c4",
+      "name": "SheCodes Manaus",
+      "city": "Manaus",
+      "area": "Desenvolvimento Web",
+      "type": "Grupo de estudo",
+      "members": 150,
+      "description": "Aprendizagem prática para criar projetos e construir portfólio.",
+      "tags": [
+        "Web",
+        "Projetos"
+      ],
+      "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": "c5",
+      "name": "Curumins Tech",
+      "city": "Parintins",
+      "area": "Inovação social",
+      "type": "Projeto social",
+      "members": 70,
+      "description": "Conceito de comunidade que aproxima tecnologia e desafios locais.",
+      "tags": [
+        "Inovação",
+        "Comunidade local"
+      ],
+      "image": "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": "c6",
+      "name": "TechAM Indígenas",
+      "city": "Tabatinga",
+      "area": "Tecnologia indígena",
+      "type": "Coletivo regional",
+      "members": 45,
+      "description": "Conceito de rede para valorizar inclusão e saberes amazônicos.",
+      "tags": [
+        "Inclusão",
+        "Amazônia"
+      ],
+      "image": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=80"
+    }
+  ],
+  "events": [
+    {
+      "id": "e1",
+      "title": "Workshop: Primeiros passos em Python",
+      "date": "2026-11-15",
+      "city": "Manaus",
+      "format": "Presencial",
+      "area": "Desenvolvimento Web",
+      "price": "Gratuito",
+      "description": "Oficina introdutória com exercícios práticos.",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": "e2",
+      "title": "Mulheres na Inteligência Artificial",
+      "date": "2026-11-22",
+      "city": "Manaus",
+      "format": "Híbrido",
+      "area": "Inteligência Artificial",
+      "price": "Gratuito",
+      "description": "Conversa sobre aplicações, ética e oportunidades em IA.",
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": "e3",
+      "title": "Hackathon: Soluções para a Amazônia",
+      "date": "2026-12-05",
+      "city": "Manaus",
+      "format": "Presencial",
+      "area": "Inovação e Pesquisa",
+      "price": "Inscrição gratuita",
+      "description": "Encontro para idealizar soluções tecnológicas regionais.",
+      "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": "e4",
+      "title": "Trilha de carreira em tecnologia",
+      "date": "2026-12-12",
+      "city": "Online",
+      "format": "Online",
+      "area": "Carreira",
+      "price": "Gratuito",
+      "description": "Encontro sobre planejamento de estudos e portfólio.",
+      "image": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80"
+    }
+  ],
+  "professionals": [
+    {
+      "id": "p1",
+      "name": "Juliana Souza",
+      "role": "Desenvolvedora Front-end",
+      "area": "Desenvolvimento Web",
+      "city": "Manaus",
+      "bio": "Perfil fictício para demonstrar trajetórias profissionais.",
+      "quote": "Tecnologia transforma ideias em soluções.",
+      "image": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "p2",
+      "name": "Camila Ribeiro",
+      "role": "Cientista de Dados",
+      "area": "Ciência de Dados",
+      "city": "Manaus",
+      "bio": "Perfil fictício para demonstrar a seção de inspiração.",
+      "quote": "Aprender em comunidade abre caminhos.",
+      "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "p3",
+      "name": "Fernanda Lima",
+      "role": "UX/UI Designer",
+      "area": "UX/UI e Design",
+      "city": "Manaus",
+      "bio": "Perfil fictício que representa diferentes áreas da tecnologia.",
+      "quote": "Design começa por ouvir pessoas.",
+      "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "p4",
+      "name": "Larissa Monteiro",
+      "role": "Analista de Segurança",
+      "area": "Segurança da Informação",
+      "city": "Parintins",
+      "bio": "Perfil fictício para ilustrar a diversidade de carreiras.",
+      "quote": "Segurança também é cuidado.",
+      "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80"
+    }
+  ],
+  "posts": [
+    {
+      "id": "post1",
+      "author": "Ana Paula",
+      "initials": "AP",
+      "community": "Manas Devs",
+      "text": "Hoje finalizei meu primeiro projeto em Python! Obrigada à comunidade pela troca de dicas e incentivo. 💜",
+      "createdAt": "2026-10-17T00:14:02.406Z",
+      "likes": 32,
+      "comments": 5
+    },
+    {
+      "id": "post2",
+      "author": "Beatriz Silva",
+      "initials": "BS",
+      "community": "Elas em Dados",
+      "text": "Alguém tem dicas de dados públicos sobre a Amazônia para praticar visualização?",
+      "createdAt": "2026-10-16T00:14:02.407Z",
+      "likes": 17,
+      "comments": 8
+    }
+  ],
+  "memberships": [],
+  "registrations": [],
+  "comments": [],
+  "quizResults": []
+}
