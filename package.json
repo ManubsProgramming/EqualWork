@@ -1,1 +1,9 @@
-{"name":"amazonas-tech-mulheres","version":"1.0.0","private":true,"scripts":{"start":"node server.js"},"dependencies":{"bcryptjs":"^2.4.3","express":"^4.21.2","jsonwebtoken":"^9.0.2"}}
+{
+  "name": "amazonas-tech-mulheres",
+  "version": "1.0.0",
+  "description": "Plataforma de comunidade, carreira e oportunidades para mulheres na tecnologia na Amazonia",
+  "main": "server.js",
+  "scripts": {"start": "node server.js", "dev": "node server.js"},
+  "dependencies": {"cors": "^2.8.5", "express": "^4.21.2"},
+  "engines": {"node": ">=18"}
+}

@@ -1,39 +1,44 @@
-# Amazonas Tech Mulheres — site + API REST
+# Amazonas Tech Mulheres
 
-Projeto responsivo inspirado nas imagens fornecidas: identidade roxo/rosa, banner amazônico, navegação, comunidades, mulheres que inspiram, quiz de carreira, trilha, eventos, bem-estar, perfil e feed.
+Site demonstrativo com identidade visual acolhedora (verde floresta, sálvia, creme, mostarda e terracota), frontend responsivo e API REST em Node.js/Express.
 
-## Executar
-1. Instale Node.js 18 ou superior.
-2. Extraia o ZIP e abra um terminal nessa pasta.
-3. Execute `npm install`.
-4. Copie `.env.example` para `.env` e configure `JWT_SECRET` com uma chave longa e aleatória.
-5. Execute `npm start`.
-6. Acesse `http://localhost:3000`.
+## Executar localmente
 
-Na primeira execução, o servidor cria `data.json` com dados demonstrativos.
+Requer Node.js 18 ou superior.
 
-## Endpoints principais
-- `GET /api/health`
-- `GET /api/communities` e `GET /api/communities/:id`
-- `POST /api/communities/:id/join` (JWT)
-- `GET /api/events` e `POST /api/events/:id/register` (JWT)
-- `GET /api/professionals`
-- `GET /api/posts`, `POST /api/posts` (JWT), `POST /api/posts/:id/like` (JWT)
-- `GET /api/posts/:id/comments`, `POST /api/posts/:id/comments` (JWT)
-- `POST /api/auth/register`, `POST /api/auth/login`
-- `GET /api/me`, `PATCH /api/me` (JWT)
-- `GET /api/quiz/questions`, `POST /api/quiz/results`
-- `GET /api/resources`, `GET /api/dashboard` (JWT)
+```bash
+npm install
+npm start
+```
 
-## Funcionalidades
-- Interface consulta a API REST do próprio projeto.
-- Cadastro/login, hash de senha com bcrypt e JWT.
-- Dados persistidos em arquivo JSON.
-- Busca e filtros de comunidades/eventos.
-- Participação em comunidades e interesse em eventos.
-- Feed, publicações, curtidas e comentários.
-- Quiz calculado com base nas respostas e trilha sugerida.
-- Perfil editável e recursos externos.
+Abra http://localhost:3000
 
-## Antes de produção
-Esta é uma base MVP para demonstração acadêmica. O JSON local não é adequado para tráfego concorrente; migre para PostgreSQL/Supabase, use HTTPS, segredo forte, rate limiting, validação e testes. Não há OAuth Google/LinkedIn implementado. Nomes, imagens, perfis, números e eventos são demonstrativos e devem ser verificados antes de divulgação. Imagens e fontes dependem de internet. A seção de bem-estar não oferece diagnóstico nem substitui atendimento profissional.
+## Publicar no Railway
+
+1. Envie todos os arquivos deste projeto para um repositório GitHub novo ou substitua os arquivos do repositório existente (mantenha uma cópia de segurança antes).
+2. No Railway, crie um projeto e escolha Deploy from GitHub Repo.
+3. Selecione o repositório. O Railway detecta Node.js pelo `package.json`.
+4. Start command: `npm start` (geralmente detectado automaticamente).
+5. Em Settings / Networking, gere um domínio público.
+6. Verifique `https://SEU-DOMINIO/api/health` e depois abra o domínio raiz.
+
+O servidor escuta em `0.0.0.0` e usa `process.env.PORT`.
+
+## API
+
+- `GET /api/health` — saúde do serviço
+- `GET /api/communities?q=python` — lista/pesquisa comunidades
+- `GET /api/communities/:id` — detalhes da comunidade
+- `GET /api/professionals?q=design` — profissionais/mentoras demonstrativas
+- `GET /api/events` — eventos
+- `GET /api/posts` — publicações da comunidade
+- `POST /api/posts` — criar publicação `{ "name": "Ana", "content": "Olá!" }`
+- `POST /api/posts/:id/like` — curtir publicação
+- `POST /api/registrations` — cadastro de interesse `{ "name": "Ana", "email": "ana@example.com", "interest": "Mentoria" }`
+
+## Importante para demonstração
+
+- Os perfis e eventos iniciais são dados ilustrativos, não representam necessariamente pessoas ou eventos reais.
+- Os cadastros de interesse são armazenados em `data.json` quando gravável. O filesystem efêmero de uma implantação pode perder esses dados em novo deploy/reinício; para uso real, configure um banco de dados persistente.
+- O formulário de entrada/cadastro é uma demonstração de interesse, não autenticação real. Não colete dados sensíveis.
+- As fotos de referência são carregadas de URLs externas do Unsplash e exigem conexão com a internet.
